@@ -1,0 +1,32 @@
+{
+    "name": "ReinanHS/PHP-MVC",
+    "description": "Model-view-controller.",
+    "keywords": ["Script", "PHP-MVC"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=7.0.0",
+        "psr/log": "^1.0",
+        "twig/twig": "^2.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "BootStrap\\": "bootstrap/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
