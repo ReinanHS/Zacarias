@@ -1,8 +1,8 @@
 <?php
 /**
- * YouPHPTube - The Best YouTube Clone Script
+ * Zacarias é um Framework PHP utilizado para o desenvolvimento web
  *
- * @package  YouPHPTube
+ * @package  Zacarias PHP
  * @author   ReinanHS <reinangabriel50@gmail.com>
  */
 

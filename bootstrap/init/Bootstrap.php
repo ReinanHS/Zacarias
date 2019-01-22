@@ -34,7 +34,7 @@ abstract class BootStrap
 	}
 	protected function setConfig()
 	{
-		$this->config = require(dirname(__DIR__).'/../configuration.php');
+		$this->config = parse_ini_file(dirname(__DIR__).'/../config.ini', true);
 	}
 	protected function getUrl()
 	{

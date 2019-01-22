@@ -4,11 +4,18 @@
 
 {% block body %}
 
-    <div class="row">
-    	<center>
-    		<h1>Welcome</h1>
-    		<p>{{ text }}</p>
-    	</center>
-    </div>
+	<main role="main" class="flex-shrink-0">
+		<div class="container">
+			<h1 class="mt-5">{{ title }}</h1>
+			<p class="lead">
+		    Zacarias é um Framework PHP utilizado para o desenvolvimento web, que utiliza a arquitetura MVC e tem como principal característica ajudar a desenvolver aplicações seguras e performáticas de forma rápida, com código limpo e simples, já que ele incentiva o uso de boas práticas de programação e utiliza o padrão PSR-2 como guia para estilo de escrita do código.
+			</p>
+			<ul class="list-group">
+				<li class="list-group-item"><a href="https://github.com/ReinanHS/Zacarias">Documentação</a></li>
+				<li class="list-group-item"><a href="https://github.com/ReinanHS/Zacarias">Projeto no GitHub</a></li>
+				<li class="list-group-item">Fundador do projeto ReinanHS</li>
+			</ul>
+		</div>
+	</main>
 
 {% endblock %}

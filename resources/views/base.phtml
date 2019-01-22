@@ -37,21 +37,27 @@
   <meta name="twitter:site" content="@empresa">
 
 	<!-- Configurações do estilo da página. -->
-  <!-- Materialize CSS -->
-	<link href="{{ canonical }}assets/node_modules/materialize-css/dist/css/materialize.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+	<link href="{{ canonical }}/assets/css/style.css" rel="stylesheet">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
     {% block body %}
     {% endblock %}
 
     <!--  Scripts-->                                                                               
-	<!-- Materialize core JavaScript -->
-	<script src="{{ canonical }}assets/node_modules/materialize-css/dist/js/materialize.min.js"></script>
-
-	<!-- Plugin JavaScript -->
-	<script src="{{ canonical }}assets/node_modules/jquery/dist/jquery.min.js"></script>
-
 	<!-- Custom scripts for this template -->
-	<script src="{{ canonical }}assets/js/main.js"></script>
+	<script src="{{ canonical }}assets/js/app.js"></script>
 </body>
 </html>

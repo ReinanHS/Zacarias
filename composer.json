@@ -10,10 +10,7 @@
         "twig/twig": "^2.0"
     },
     "autoload": {
-        "classmap": [
-            "database/seeds",
-            "database/factories"
-        ],
+        "classmap": [],
         "psr-4": {
             "App\\": "app/",
             "BootStrap\\": "bootstrap/"
