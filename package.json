@@ -2,10 +2,10 @@
   "name": "zacarias",
   "version": "1.0.0",
   "description": "Zacarias é um Framework PHP utilizado para o desenvolvimento web, que utiliza a arquitetura MVC e tem como principal característica ajudar a desenvolver aplicações seguras e performáticas de forma rápida.",
-  "main": "bootstrap/builds/index.js",
+  "main": "config/builds/index.js",
   "scripts": {
     "dev": "npm run development",
-    "development": "node bootstrap/builds/index.js",
+    "development": "node config/builds/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

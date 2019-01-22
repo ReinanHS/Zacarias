@@ -4,13 +4,18 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit6246deee3c0c0d011385bafde6cac746
+class ComposerStaticInitdd876fb598fb3fbb0024ab2f964e1089
 {
     public static $files = array (
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'Z' => 
+        array (
+            'Zacarias\\' => 9,
+        ),
         'T' => 
         array (
             'Twig\\' => 5,
@@ -19,6 +24,7 @@ class ComposerStaticInit6246deee3c0c0d011385bafde6cac746
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
         ),
         'P' => 
         array (
@@ -26,15 +32,15 @@ class ComposerStaticInit6246deee3c0c0d011385bafde6cac746
         ),
         'B' => 
         array (
-            'BootStrap\\' => 10,
-        ),
-        'A' => 
-        array (
-            'App\\' => 4,
+            'Bootstrap\\' => 10,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Zacarias\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
@@ -47,17 +53,17 @@ class ComposerStaticInit6246deee3c0c0d011385bafde6cac746
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
-        'BootStrap\\' => 
+        'Bootstrap\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/bootstrap',
-        ),
-        'App\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
+            0 => __DIR__ . '/../..' . '/config',
         ),
     );
 
@@ -72,12 +78,7 @@ class ComposerStaticInit6246deee3c0c0d011385bafde6cac746
     );
 
     public static $classMap = array (
-        'App\\Http\\Controllers\\Web\\ControllerWeb' => __DIR__ . '/../..' . '/app/Http/Controllers/Web/ControllerWeb.php',
-        'App\\Init' => __DIR__ . '/../..' . '/app/Init.php',
-        'BootStrap\\init\\BootStrap' => __DIR__ . '/../..' . '/bootstrap/init/Bootstrap.php',
-        'BootStrap\\init\\Error' => __DIR__ . '/../..' . '/bootstrap/init/Error.php',
-        'BootStrap\\init\\Route' => __DIR__ . '/../..' . '/bootstrap/init/Route.php',
-        'BootStrap\\init\\View' => __DIR__ . '/../..' . '/bootstrap/init/View.php',
+        'Bootstrap\\Bootstrap' => __DIR__ . '/../..' . '/config/bootstrap.php',
         'Psr\\Log\\AbstractLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/AbstractLogger.php',
         'Psr\\Log\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/log/Psr/Log/InvalidArgumentException.php',
         'Psr\\Log\\LogLevel' => __DIR__ . '/..' . '/psr/log/Psr/Log/LogLevel.php',
@@ -88,6 +89,8 @@ class ComposerStaticInit6246deee3c0c0d011385bafde6cac746
         'Psr\\Log\\NullLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/NullLogger.php',
         'Psr\\Log\\Test\\DummyTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
         'Psr\\Log\\Test\\LoggerInterfaceTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
+        'Psr\\Log\\Test\\TestLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/TestLogger.php',
+        'Symfony\\Polyfill\\Ctype\\Ctype' => __DIR__ . '/..' . '/symfony/polyfill-ctype/Ctype.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'Twig\\Cache\\CacheInterface' => __DIR__ . '/..' . '/twig/twig/src/Cache/CacheInterface.php',
         'Twig\\Cache\\FilesystemCache' => __DIR__ . '/..' . '/twig/twig/src/Cache/FilesystemCache.php',
@@ -134,6 +137,7 @@ class ComposerStaticInit6246deee3c0c0d011385bafde6cac746
         'Twig\\Node\\BlockReferenceNode' => __DIR__ . '/..' . '/twig/twig/src/Node/BlockReferenceNode.php',
         'Twig\\Node\\BodyNode' => __DIR__ . '/..' . '/twig/twig/src/Node/BodyNode.php',
         'Twig\\Node\\CheckSecurityNode' => __DIR__ . '/..' . '/twig/twig/src/Node/CheckSecurityNode.php',
+        'Twig\\Node\\DeprecatedNode' => __DIR__ . '/..' . '/twig/twig/src/Node/DeprecatedNode.php',
         'Twig\\Node\\DoNode' => __DIR__ . '/..' . '/twig/twig/src/Node/DoNode.php',
         'Twig\\Node\\EmbedNode' => __DIR__ . '/..' . '/twig/twig/src/Node/EmbedNode.php',
         'Twig\\Node\\Expression\\AbstractExpression' => __DIR__ . '/..' . '/twig/twig/src/Node/Expression/AbstractExpression.php',
@@ -205,7 +209,6 @@ class ComposerStaticInit6246deee3c0c0d011385bafde6cac746
         'Twig\\Node\\SandboxNode' => __DIR__ . '/..' . '/twig/twig/src/Node/SandboxNode.php',
         'Twig\\Node\\SandboxedPrintNode' => __DIR__ . '/..' . '/twig/twig/src/Node/SandboxedPrintNode.php',
         'Twig\\Node\\SetNode' => __DIR__ . '/..' . '/twig/twig/src/Node/SetNode.php',
-        'Twig\\Node\\SetTempNode' => __DIR__ . '/..' . '/twig/twig/src/Node/SetTempNode.php',
         'Twig\\Node\\SpacelessNode' => __DIR__ . '/..' . '/twig/twig/src/Node/SpacelessNode.php',
         'Twig\\Node\\TextNode' => __DIR__ . '/..' . '/twig/twig/src/Node/TextNode.php',
         'Twig\\Node\\WithNode' => __DIR__ . '/..' . '/twig/twig/src/Node/WithNode.php',
@@ -238,6 +241,7 @@ class ComposerStaticInit6246deee3c0c0d011385bafde6cac746
         'Twig\\TokenParser\\AbstractTokenParser' => __DIR__ . '/..' . '/twig/twig/src/TokenParser/AbstractTokenParser.php',
         'Twig\\TokenParser\\AutoEscapeTokenParser' => __DIR__ . '/..' . '/twig/twig/src/TokenParser/AutoEscapeTokenParser.php',
         'Twig\\TokenParser\\BlockTokenParser' => __DIR__ . '/..' . '/twig/twig/src/TokenParser/BlockTokenParser.php',
+        'Twig\\TokenParser\\DeprecatedTokenParser' => __DIR__ . '/..' . '/twig/twig/src/TokenParser/DeprecatedTokenParser.php',
         'Twig\\TokenParser\\DoTokenParser' => __DIR__ . '/..' . '/twig/twig/src/TokenParser/DoTokenParser.php',
         'Twig\\TokenParser\\EmbedTokenParser' => __DIR__ . '/..' . '/twig/twig/src/TokenParser/EmbedTokenParser.php',
         'Twig\\TokenParser\\ExtendsTokenParser' => __DIR__ . '/..' . '/twig/twig/src/TokenParser/ExtendsTokenParser.php',
@@ -311,6 +315,7 @@ class ComposerStaticInit6246deee3c0c0d011385bafde6cac746
         'Twig_Node_BlockReference' => __DIR__ . '/..' . '/twig/twig/lib/Twig/Node/BlockReference.php',
         'Twig_Node_Body' => __DIR__ . '/..' . '/twig/twig/lib/Twig/Node/Body.php',
         'Twig_Node_CheckSecurity' => __DIR__ . '/..' . '/twig/twig/lib/Twig/Node/CheckSecurity.php',
+        'Twig_Node_Deprecated' => __DIR__ . '/..' . '/twig/twig/lib/Twig/Node/Deprecated.php',
         'Twig_Node_Do' => __DIR__ . '/..' . '/twig/twig/lib/Twig/Node/Do.php',
         'Twig_Node_Embed' => __DIR__ . '/..' . '/twig/twig/lib/Twig/Node/Embed.php',
         'Twig_Node_Expression' => __DIR__ . '/..' . '/twig/twig/lib/Twig/Node/Expression.php',
@@ -415,6 +420,7 @@ class ComposerStaticInit6246deee3c0c0d011385bafde6cac746
         'Twig_TokenParserInterface' => __DIR__ . '/..' . '/twig/twig/lib/Twig/TokenParserInterface.php',
         'Twig_TokenParser_AutoEscape' => __DIR__ . '/..' . '/twig/twig/lib/Twig/TokenParser/AutoEscape.php',
         'Twig_TokenParser_Block' => __DIR__ . '/..' . '/twig/twig/lib/Twig/TokenParser/Block.php',
+        'Twig_TokenParser_Deprecated' => __DIR__ . '/..' . '/twig/twig/lib/Twig/TokenParser/Deprecated.php',
         'Twig_TokenParser_Do' => __DIR__ . '/..' . '/twig/twig/lib/Twig/TokenParser/Do.php',
         'Twig_TokenParser_Embed' => __DIR__ . '/..' . '/twig/twig/lib/Twig/TokenParser/Embed.php',
         'Twig_TokenParser_Extends' => __DIR__ . '/..' . '/twig/twig/lib/Twig/TokenParser/Extends.php',
@@ -434,15 +440,19 @@ class ComposerStaticInit6246deee3c0c0d011385bafde6cac746
         'Twig_TokenStream' => __DIR__ . '/..' . '/twig/twig/lib/Twig/TokenStream.php',
         'Twig_Util_DeprecationCollector' => __DIR__ . '/..' . '/twig/twig/lib/Twig/Util/DeprecationCollector.php',
         'Twig_Util_TemplateDirIterator' => __DIR__ . '/..' . '/twig/twig/lib/Twig/Util/TemplateDirIterator.php',
+        'Zacarias\\Controller\\Api\\MainController' => __DIR__ . '/../..' . '/src/Controller/Api/MainController.php',
+        'Zacarias\\Controller\\Auth\\AuthController' => __DIR__ . '/../..' . '/src/Controller/Auth/AuthController.php',
+        'Zacarias\\Database\\Database' => __DIR__ . '/../..' . '/src/Database/Database.php',
+        'Zacarias\\Routing\\Router\\Route' => __DIR__ . '/../..' . '/src/Routing/Router/ Route.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit6246deee3c0c0d011385bafde6cac746::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit6246deee3c0c0d011385bafde6cac746::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit6246deee3c0c0d011385bafde6cac746::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit6246deee3c0c0d011385bafde6cac746::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitdd876fb598fb3fbb0024ab2f964e1089::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitdd876fb598fb3fbb0024ab2f964e1089::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitdd876fb598fb3fbb0024ab2f964e1089::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitdd876fb598fb3fbb0024ab2f964e1089::$classMap;
 
         }, null, ClassLoader::class);
     }

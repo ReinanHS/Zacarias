@@ -1,6 +1,6 @@
 <?php
-namespace BootStrap\init;
-use BootStrap\init\Bootstrap;
+namespace Bootstrap\Views;
+use Bootstrap\Bootstrap;
 class View
 {
 	# Atributos
@@ -10,9 +10,9 @@ class View
 	{
 		extract($args, EXTR_SKIP);
 		$local = str_replace(".", "/", $view);
-		if(is_readable(dirname(__DIR__).'/../resources/views/'.$local.'.phtml'))
+		if(is_readable(Bootstrap::getDir().'/src/Views/'.$local.'.phtml'))
 		{
-			include(dirname(__DIR__).'/../resources/views/'.$local.'.phtml');
+			include(Bootstrap::getDir().'src/Views/'.$local.'.phtml');
 		}
 		else
 		{
@@ -23,11 +23,11 @@ class View
         	return false;
 		}
 	}
-	public function renderTemplate($template, $args = [])
+	public function renderTemplate(string $template, array $args = [])
 	{
 		static $twig = null;
 		if ($twig === null) {
-            $loader = new \Twig_Loader_Filesystem(dirname(__DIR__).'/../resources/views/');
+            $loader = new \Twig_Loader_Filesystem(Bootstrap::getDir().'/src/Views/');
             $twig = new \Twig_Environment($loader);
         }
         $template = str_replace(".", "/", $template);
@@ -35,4 +35,3 @@ class View
         echo $twig->render($template, $args);
 	}
 }
-?>

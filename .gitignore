@@ -1,6 +1,18 @@
+# User specific & automatically generated files #
+#################################################
+/build
+/dist
+/tags
+/composer.lock
+/phpunit.xml
+/phpcs.xml
+/vendor
+/composer.phar
 /node_modules
-/.idea
-/.vagrant
+*.ini
+debug.log
+error.log
 npm-debug.log
 yarn-error.log
-config.ini
+package-lock.json
+composer.lock
