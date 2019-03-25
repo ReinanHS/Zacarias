@@ -7,7 +7,7 @@ Zacarias é um Framework PHP utilizado para o desenvolvimento web, que utiliza a
 
 # Instalando o Zacarias-PHP
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/EAEWQrEF4H8&feature=youtu.be/0.jpg)](http://www.youtube.com/watch?v=EAEWQrEF4H8&feature=youtu.be)
+[![Como instalar vídeo aula no YouTube](http://img.youtube.com/vi/EAEWQrEF4H8&feature=youtu.be/0.jpg)](http://www.youtube.com/watch?v=EAEWQrEF4H8&feature=youtu.be)
 
 O ZacariasPHP utiliza Composer, uma ferramenta de gerenciamento de dependências para PHP 7.0+. Primeiramente, você precisará baixar e instalar o Composer se não o fez anteriormente. Se você tem cURL instalada, é tão fácil quanto executar o seguinte:
 
