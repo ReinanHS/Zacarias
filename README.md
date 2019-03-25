@@ -6,6 +6,9 @@
 Zacarias é um Framework PHP utilizado para o desenvolvimento web, que utiliza a arquitetura MVC e tem como principal característica ajudar a desenvolver aplicações seguras e performáticas de forma rápida, com código limpo e simples, já que ele incentiva o uso de boas práticas de programação e utiliza o padrão PSR-2 como guia para estilo de escrita do código.
 
 # Instalando o Zacarias-PHP
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/EAEWQrEF4H8&feature=youtu.be/0.jpg)](http://www.youtube.com/watch?v=EAEWQrEF4H8&feature=youtu.be)
+
 O ZacariasPHP utiliza Composer, uma ferramenta de gerenciamento de dependências para PHP 7.0+. Primeiramente, você precisará baixar e instalar o Composer se não o fez anteriormente. Se você tem cURL instalada, é tão fácil quanto executar o seguinte:
 
 ```sh
@@ -161,13 +164,13 @@ Vamos usá-lo como base:
 ##</VirtualHost>
 ```
 
-⋅⋅* VirtualHost: Tag definindo as configurações do virtual host.
-⋅⋅* ServerAdmin: Endereço de contato.
-⋅⋅* DocumentRoot: Caminho completo até a pasta que será acessada.
-⋅⋅* ServerName: Nome do host que será acessado.
-⋅⋅* ServerAlias: Nomes alternativos para o host.
-⋅⋅* ErrorLog:  Nome do arquivo que o servidor registrará os erros encontrados.
-⋅⋅* CustomLog: Nome do arquivo para as requisições.
+1. VirtualHost: Tag definindo as configurações do virtual host.
+2. ServerAdmin: Endereço de contato.
+3. DocumentRoot: Caminho completo até a pasta que será acessada.
+4. ServerName: Nome do host que será acessado.
+5. ServerAlias: Nomes alternativos para o host.
+6. ErrorLog:  Nome do arquivo que o servidor registrará os erros encontrados.
+7. CustomLog: Nome do arquivo para as requisições.
 
 Iremos adicionar a nossa configuração, apontando para onde será configurado o virtual host. No nosso projeto seria:
 ```
