@@ -11,7 +11,7 @@ class Bootstrap
 	{
 		$this->run();
 	}
-	public function getConfig(string $key = null, string $subKey = null)
+	static public function getConfig(string $key = null, string $subKey = null)
 	{
 		$data = parse_ini_file('config.ini', true);
 
@@ -24,12 +24,12 @@ class Bootstrap
 		}
 		return $data;
 	}
-	public function getDir()
+	static public function getDir()
 	{
 		return dirname(__DIR__);
 	}
 	# Métados
-	public function run()
+	static public function run()
 	{
 		//$teste = new Route();
 		//Route::get('api/home/', 'Controller\Api\MainController@home');

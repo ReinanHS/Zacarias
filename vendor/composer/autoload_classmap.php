@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Bootstrap\\Bootstrap' => $baseDir . '/config/bootstrap.php',
+    'Bootstrap\\Views\\View' => $baseDir . '/config/Views/View.php',
     'Psr\\Log\\AbstractLogger' => $vendorDir . '/psr/log/Psr/Log/AbstractLogger.php',
     'Psr\\Log\\InvalidArgumentException' => $vendorDir . '/psr/log/Psr/Log/InvalidArgumentException.php',
     'Psr\\Log\\LogLevel' => $vendorDir . '/psr/log/Psr/Log/LogLevel.php',
@@ -17,7 +18,6 @@ return array(
     'Psr\\Log\\NullLogger' => $vendorDir . '/psr/log/Psr/Log/NullLogger.php',
     'Psr\\Log\\Test\\DummyTest' => $vendorDir . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
     'Psr\\Log\\Test\\LoggerInterfaceTest' => $vendorDir . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
-    'Psr\\Log\\Test\\TestLogger' => $vendorDir . '/psr/log/Psr/Log/Test/TestLogger.php',
     'Symfony\\Polyfill\\Ctype\\Ctype' => $vendorDir . '/symfony/polyfill-ctype/Ctype.php',
     'Symfony\\Polyfill\\Mbstring\\Mbstring' => $vendorDir . '/symfony/polyfill-mbstring/Mbstring.php',
     'Twig\\Cache\\CacheInterface' => $vendorDir . '/twig/twig/src/Cache/CacheInterface.php',
@@ -65,6 +65,7 @@ return array(
     'Twig\\Node\\BlockReferenceNode' => $vendorDir . '/twig/twig/src/Node/BlockReferenceNode.php',
     'Twig\\Node\\BodyNode' => $vendorDir . '/twig/twig/src/Node/BodyNode.php',
     'Twig\\Node\\CheckSecurityNode' => $vendorDir . '/twig/twig/src/Node/CheckSecurityNode.php',
+    'Twig\\Node\\CheckToStringNode' => $vendorDir . '/twig/twig/src/Node/CheckToStringNode.php',
     'Twig\\Node\\DeprecatedNode' => $vendorDir . '/twig/twig/src/Node/DeprecatedNode.php',
     'Twig\\Node\\DoNode' => $vendorDir . '/twig/twig/src/Node/DoNode.php',
     'Twig\\Node\\EmbedNode' => $vendorDir . '/twig/twig/src/Node/EmbedNode.php',
@@ -122,6 +123,7 @@ return array(
     'Twig\\Node\\Expression\\Unary\\NegUnary' => $vendorDir . '/twig/twig/src/Node/Expression/Unary/NegUnary.php',
     'Twig\\Node\\Expression\\Unary\\NotUnary' => $vendorDir . '/twig/twig/src/Node/Expression/Unary/NotUnary.php',
     'Twig\\Node\\Expression\\Unary\\PosUnary' => $vendorDir . '/twig/twig/src/Node/Expression/Unary/PosUnary.php',
+    'Twig\\Node\\Expression\\VariadicExpression' => $vendorDir . '/twig/twig/src/Node/Expression/VariadicExpression.php',
     'Twig\\Node\\FlushNode' => $vendorDir . '/twig/twig/src/Node/FlushNode.php',
     'Twig\\Node\\ForLoopNode' => $vendorDir . '/twig/twig/src/Node/ForLoopNode.php',
     'Twig\\Node\\ForNode' => $vendorDir . '/twig/twig/src/Node/ForNode.php',

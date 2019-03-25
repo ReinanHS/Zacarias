@@ -3,12 +3,12 @@
 /build
 /dist
 /tags
-/composer.lock
+composer.lock
 /phpunit.xml
 /phpcs.xml
-/vendor
-/composer.phar
-/node_modules
+vendor/*
+composer.phar
+node_modules
 *.ini
 debug.log
 error.log

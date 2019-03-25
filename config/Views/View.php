@@ -6,7 +6,7 @@ class View
 	# Atributos
 	# Métados Especiais
 	# Metados
-	public function view($view,  $args = [])
+	static public function view($view,  $args = [])
 	{
 		extract($args, EXTR_SKIP);
 		$local = str_replace(".", "/", $view);
@@ -23,7 +23,7 @@ class View
         	return false;
 		}
 	}
-	public function renderTemplate(string $template, array $args = [])
+	static public function renderTemplate(string $template, array $args = [])
 	{
 		static $twig = null;
 		if ($twig === null) {

@@ -16,7 +16,7 @@ class Route
 			
 	}
 	// Métodos
-	public function get(string $url, string $controller)
+	static public function get(string $url, string $controller)
 	{
 		$url_server = explode('/', $_SERVER['REQUEST_URI']);
 		array_splice($url_server, 0, 1);
@@ -56,7 +56,7 @@ class Route
 		}
 		
 	}
-	public function post(string $url, string $controller)
+	static public function post(string $url, string $controller)
 	{
 		$url_server = explode('/', $_SERVER['REQUEST_URI']);
 		array_splice($url_server, 0, 1);
