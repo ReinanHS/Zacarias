@@ -11,9 +11,10 @@
     "require": {
         "php": "^7.3",
         "coffeecode/router": "1.0.*",
+        "josegonzalez/dotenv": "^3.2",
+        "larapack/dd": "^1.1",
         "psr/log": "^1.0",
-        "twig/twig": "^2.0",
-        "vlucas/phpdotenv": "^5.2"
+        "twig/twig": "^2.0"
     },
     "config": {
         "optimize-autoloader": true,

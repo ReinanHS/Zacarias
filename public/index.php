@@ -5,7 +5,9 @@ use Bootstrap\System\ErrorController;
 
 if ( file_exists(dirname(__DIR__) . '/vendor/autoload.php') ) {
   header("Access-Control-Allow-Origin: *");
-  require_once('../vendor/autoload.php');
+  
+  require "../vendor/autoload.php";
+  require "../vendor/larapack/dd/src/helper.php";
   
   $init = new Bootstrap();
 

@@ -1,34 +1,42 @@
-<?php 
-/**
-* @@author ReinanHS <reinangabriel50@gmail.com>
-*/
+<?php
 namespace Bootstrap;
 
 use CoffeeCode\Router\Router;
+use josegonzalez\Dotenv\Expect;
+use josegonzalez\Dotenv\Loader;
+use \Exception as Exception;
 
-class Bootstrap
-{
-	# Atributos
-	# Métodos Especiais
-	public function __construct()
-	{
+class Bootstrap{
+	private $env_array;
+
+	public function __construct(){
+		$this->envLoad();
 		$this->run();
 	}
 	
-	public function getConfig(){
-		$data = parse_ini_file('config.ini', true);
-		return $data;
+	public function envLoad() : void{
+		$loader = new Loader(dirname(__DIR__). '/.env');
+		$loader->parse();
+		$this->env_array = $loader->toArray();
 	}
 
-	public function getDir(): String{
+	public function env(String $key){
+		if(array_key_exists($key, $this->env_array)){
+			return $this->env_array[$key];
+		}else return null;
+	}
+
+	public static function getDir(): String{
 		return dirname(__DIR__);
 	}
 
-	# Métados
 	public function run(): void{
-		// $router = new Router("https://www.youdomain.com");
-		
-		exit();
+		$router = new Router($this->env('APP_URL'));
+		$router->namespace("Zacarias\Controller");
+
+		include dirname(__DIR__) . "/src/Routing/web.php";
+
+		$router->dispatch();
 	}
 }
  ?>
