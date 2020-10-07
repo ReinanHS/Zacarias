@@ -1,7 +1,5 @@
 ![minima theme preview](https://uploaddeimagens.com.br/images/001/232/580/thumb/zacarias.png?1514637326)
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
 # Sobre Zacarias
 Zacarias é um Framework PHP utilizado para o desenvolvimento web, que utiliza a arquitetura MVC e tem como principal característica ajudar a desenvolver aplicações seguras e performáticas de forma rápida, com código limpo e simples, já que ele incentiva o uso de boas práticas de programação e utiliza o padrão PSR-2 como guia para estilo de escrita do código.
 
