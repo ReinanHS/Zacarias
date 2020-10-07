@@ -1,5 +1,5 @@
 <p align="center">
-![minima theme preview](https://uploaddeimagens.com.br/images/001/232/580/thumb/zacarias.png?1514637326)
+<img src="https://uploaddeimagens.com.br/images/001/232/580/thumb/zacarias.png?1514637326">
 </p>
 
 # Sobre Zacarias
