@@ -11,10 +11,10 @@ if (file_exists(DOCROOT . '/vendor/autoload.php')) {
 
   require "../vendor/autoload.php";
   require "../vendor/larapack/dd/src/helper.php";
-  require "../config/System/Debug.php";
+  require "../framework/System/Debug.php";
 
   $init = new Bootstrap();
 } else {
-  require_once('../config/System/ErrorController.php');
+  require_once('../framework/System/ErrorController.php');
   ErrorController::abort('Para usar o <b>Zacarias</b> é necessário baixar as dependências do projeto com o comando <pre><code>composer install</code></pre>');
 }
