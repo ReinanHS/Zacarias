@@ -14,24 +14,17 @@ class View
 		{
 			include(Bootstrap::getDir().'src/Views/'.$local.'.phtml');
 		}
-		else
-		{
-			if ($this->logger) 
-			{
-            	$this->logger->error('Could not find the view: '. $local);
-        	}
-        	return false;
-		}
+		else return false;
 	}
 	static public function renderTemplate(string $template, array $args = [])
 	{
 		static $twig = null;
 		if ($twig === null) {
-            $loader = new \Twig_Loader_Filesystem(Bootstrap::getDir().'/src/Views/');
-            $twig = new \Twig_Environment($loader);
-        }
-        $template = str_replace(".", "/", $template);
-        $template = $template.'.phtml';
-        echo $twig->render($template, $args);
+			$loader = new \Twig_Loader_Filesystem(Bootstrap::getDir().'/src/Views/');
+			$twig = new \Twig_Environment($loader);
+		}
+		$template = str_replace(".", "/", $template);
+		$template = $template.'.phtml';
+		echo $twig->render($template, $args);
 	}
 }

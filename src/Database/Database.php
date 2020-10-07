@@ -25,7 +25,7 @@ class Database
 	{
 		$dsn = 'mysql:host='.Bootstrap::getConfig(['database']['host']);
 		$dsn .= ';dbname='.Bootstrap::getConfig(['database']['dbname']);
-		$dsn .= ';charset=utf8');
+		$dsn .= ';charset=utf8';
 
 		$user = Bootstrap::getConfig(['database']['user']);
 		$password = Bootstrap::getConfig(['database']['senha']);
