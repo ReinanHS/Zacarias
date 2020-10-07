@@ -11,10 +11,6 @@ class Route
 {
 	// Atributos
 	// Métodos Especiais
-	public function __construct()
-	{
-			
-	}
 	// Métodos
 	static public function get(string $url, string $controller)
 	{
@@ -48,10 +44,7 @@ class Route
 				$class = $meth[0]; 
 				$instance = new $class();
 
-
 				return call_user_func_array(array($instance, "index"), $parat);
-
-				//return $instance->index($parat);
 			}
 		}
 		
@@ -90,8 +83,6 @@ class Route
 
 
 				return call_user_func_array(array($instance, "index"), $parat);
-
-				//return $instance->index($parat);
 			}
 		}
 		

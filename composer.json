@@ -1,5 +1,5 @@
 {
-    "name": "ReinanHS/Zacarias",
+    "name": "reinanhs/zacarias",
     "description": "The Zacarias PHP framework",
     "keywords": [
         "framework",
@@ -7,28 +7,21 @@
         "psr-4"
     ],
     "license": "MIT",
-    "homepage": "https://reinanhs.github.io/zacarias/",
-    "type": "project",
+    "homepage": "https://github.com/reinanhs/zacarias/",
     "require": {
-        "php": ">=7.0.0",
+        "php": "^7.3",
         "psr/log": "^1.0",
         "twig/twig": "^2.0"
     },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
     "autoload": {
-        "classmap": [],
         "psr-4": {
             "Zacarias\\": "src/",
             "Bootstrap\\": "config/"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true
     }
 }
