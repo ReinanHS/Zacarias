@@ -13,11 +13,13 @@ class Bootstrap{
 		$this->envLoad();
 		$this->run();
 	}
-	
+
 	public function envLoad() : void{
 		$loader = new Loader(dirname(__DIR__). '/.env');
-		$loader->parse();
+        $loader->parse();
+
 		$this->env_array = $loader->toArray();
+        define('ENV', $loader->toArray());
 	}
 
 	public function env(String $key){
