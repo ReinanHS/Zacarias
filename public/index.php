@@ -1,6 +1,15 @@
 <?php
-header("Access-Control-Allow-Origin: *");
-require_once('../vendor/autoload.php');
-use Bootstrap\Bootstrap;
 
-$init = new Bootstrap();
+use Bootstrap\Bootstrap;
+use Bootstrap\System\ErrorController;
+
+if ( file_exists(dirname(__DIR__) . '/vendor/autoload.php') ) {
+  header("Access-Control-Allow-Origin: *");
+  require_once('../vendor/autoload.php');
+  
+  $init = new Bootstrap();
+
+}else{
+  require_once('../config/System/ErrorController.php');
+  ErrorController::render('Para usar o <b>Zacarias</b> é necessário baixar as dependências do projeto com o comando <pre><code>composer install</code></pre>');
+}
