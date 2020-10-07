@@ -10,9 +10,10 @@
     "homepage": "https://github.com/reinanhs/zacarias/",
     "require": {
         "php": "^7.3",
+        "coffeecode/router": "1.0.*",
         "psr/log": "^1.0",
         "twig/twig": "^2.0",
-        "coffeecode/router": "1.0.*"
+        "vlucas/phpdotenv": "^5.2"
     },
     "config": {
         "optimize-autoloader": true,

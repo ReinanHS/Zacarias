@@ -3,6 +3,9 @@
 * @@author ReinanHS <reinangabriel50@gmail.com>
 */
 namespace Bootstrap;
+
+use CoffeeCode\Router\Router;
+
 class Bootstrap
 {
 	# Atributos
@@ -11,29 +14,21 @@ class Bootstrap
 	{
 		$this->run();
 	}
-	static public function getConfig(string $key = null, string $subKey = null)
-	{
+	
+	public function getConfig(){
 		$data = parse_ini_file('config.ini', true);
-
-		if(isset($subKey) && isset($data[$key][$subKey]))
-		{
-			return $data[$key][$subKey];
-		}else if(isset($key) && isset($data[$key]))
-		{
-			return $data[$key];
-		}
 		return $data;
 	}
-	static public function getDir()
-	{
+
+	public function getDir(): String{
 		return dirname(__DIR__);
 	}
+
 	# Métados
-	static public function run()
-	{
-		//$teste = new Route();
-		//Route::get('api/home/', 'Controller\Api\MainController@home');
-		require(dirname(__DIR__).'/src/Routing/web.php');
+	public function run(): void{
+		// $router = new Router("https://www.youdomain.com");
+		
+		exit();
 	}
 }
  ?>
