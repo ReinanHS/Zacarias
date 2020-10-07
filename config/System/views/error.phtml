@@ -360,6 +360,7 @@
   <div id="app">
     <div class="container">
       <!--/.row-->
+      <?php if($type == 'abort'): ?>
       <div class="row">
         <div class="modalbox error col-sm-8 col-md-6 col-lg-5 center animate">
           <div class="icon d-flex justify-content-center align-items-center">
@@ -374,6 +375,37 @@
         </div>
         <!--/.success-->
       </div>
+      <?php else: ?>
+      <div class="row">
+        <div class="modalbox error col-sm-8 col-md-6 col-lg-8 center animate">
+          <!--/.icon-->
+          <h2>Zacarias Error</h2>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Mensagem</th>
+                <th scope="col"><?php echo $message; ?></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Arquivo</th>
+                <td><?php echo $file; ?></td>
+              </tr>
+              <tr>
+                <th scope="row">Classe</th>
+                <td><?php echo $class; ?></td>
+              </tr>
+              <tr>
+                <th scope="row">Linha</th>
+                <td><?php echo $line; ?></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--/.success-->
+      </div>
+      <?php endif; ?>
       <!--/.row-->
     </div>
   </div>

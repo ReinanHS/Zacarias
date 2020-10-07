@@ -3,15 +3,18 @@
 use Bootstrap\Bootstrap;
 use Bootstrap\System\ErrorController;
 
-if ( file_exists(dirname(__DIR__) . '/vendor/autoload.php') ) {
+// Set the full path to the docroot
+define('DOCROOT', dirname(__DIR__));
+
+if (file_exists(DOCROOT . '/vendor/autoload.php')) {
   header("Access-Control-Allow-Origin: *");
-  
+
   require "../vendor/autoload.php";
   require "../vendor/larapack/dd/src/helper.php";
-  
-  $init = new Bootstrap();
+  require "../config/System/Debug.php";
 
-}else{
+  $init = new Bootstrap();
+} else {
   require_once('../config/System/ErrorController.php');
-  ErrorController::render('Para usar o <b>Zacarias</b> é necessário baixar as dependências do projeto com o comando <pre><code>composer install</code></pre>');
+  ErrorController::abort('Para usar o <b>Zacarias</b> é necessário baixar as dependências do projeto com o comando <pre><code>composer install</code></pre>');
 }
